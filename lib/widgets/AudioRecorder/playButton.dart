@@ -9,11 +9,16 @@ class PlayButton extends StatefulWidget {
   final Icon pauseIcon;
   final VoidCallback? onPressed;
 
+  // PlayButton({
+  //   required this.onPressed,
+  //   this.initialIsPlaying = false,
+  //   this.playIcon = const Icon(Icons.play_arrow),
+  //   this.pauseIcon = const Icon(Icons.pause),
+  // });
+
   PlayButton({
     required this.onPressed,
-    this.initialIsPlaying = false,
-    this.playIcon = const Icon(Icons.play_arrow),
-    this.pauseIcon = const Icon(Icons.pause),
+    this.initialIsPlaying = true,
   });
 
   @override
